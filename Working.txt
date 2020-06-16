@@ -1,0 +1,11 @@
+## Working 
+
+It works on the principle of Mohr's code.
+In sensors, we have a trigger pin and an echo pin. We will connect those pins to the Arduino at a particular port. Using this, we can calculate the distance between an object and the person by sending out a sound wave at a specific frequency and waiting for that sound wave to bounce back. Since it is known that the speed of sound is 320m/s, so we can take the time for the sound to return and multipy it by 0.032cm/(microsec) for the total trip. Total distance travelled means that the sound wave travelled 2 times the distance from the object. So to find the distance from an object, simply divide the total distance by 2. If the distance is less than 1m, one small beep and 4 big beeps ring (small beep means sound that rings for lesser time). As distance keeps increasing by each meter, number of small beeps increases and big beeps decreases.
+
+## Components Required
+
+1) Arduino
+2) Ultrasonic Sensor
+2) Buzzer
+3) ON/OFF Button
